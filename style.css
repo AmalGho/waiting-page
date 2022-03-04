@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    /*vh = view port = all screen*/
+    min-height: 100vh;
+    display: flex;
+    /*should be with flex*/
+    align-items: center;
+    justify-content: center;
+    background: url(images/bg3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*fix the pic when scrolling, but not working with iphone*/
+    background-attachment: fixed;
+    transition: all 0.7s ease-in-out;
+}
+
+.main .main-content {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+    padding: 100px;
+    border-radius: 10px;
+    width: 50%;
+    transition: all 0.7s ease-out;
+}
+
+.main .main-content p {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+
